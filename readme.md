@@ -38,7 +38,7 @@ cores, textos e estilos do app. Ela também possui as configurações do firebas
 Os módulos é onde fica toda a parte visual do aplicativo, juntamente com as models e controllers. Todas as telas/funcionalidades são encontradas 
 no module.
 
-![brasil-export](https://user-images.githubusercontent.com/98099163/209827691-00e36b20-4842-4f50-b390-ca8a52bc59be.png)
+![Captura de tela de 2022-12-27 17-09-30](https://user-images.githubusercontent.com/98099163/209831294-ee8a30d2-5441-4b4c-9f83-d6d306d70816.png)
 
 > O projeto usa na sua estrutura o Flutter Modular, responsável por ter uma estrutura de micro frontends (microapps) onde conseguimos separar nosso aplicativo em módulos. Ele também é usado nas rotas do app, no qual trabalhamos com a injecção de dependências.
 
@@ -52,15 +52,25 @@ A pasta de `intro` é composta por uma pasta `presenter`, contento uma pasta `co
 ![intro](https://user-images.githubusercontent.com/98099163/209830388-1023ee67-71b6-47f9-b8f7-dce3df07db60.png)
 
 
+## Auth
+O fluxo de login é o primeiro quando o usuário passa a tela de intro. Existe uma primeira veriicação ao se colocar o e-mail.
+
+![Diagrama em branco](https://user-images.githubusercontent.com/98099163/209834196-e375e4a6-4008-47e0-a5db-b085f5048b4e.png)
+
+
 ## Dashboard
+O dashboard é o primeiro módulo a ser construído após o fluxo de login.
 O aplicativo é dividido em quatro telas principais, sendo notas, calendário, chat e configurações.
 
-![dashboard](https://user-images.githubusercontent.com/98099163/209826475-dac86982-0e16-4b07-af8a-1a9c8eb990f5.png)
+![dashboard](https://user-images.githubusercontent.com/98099163/209837045-d70363d2-dfaf-403b-b0e4-279da1e125f1.png)
 
 
-## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
+
+## Notas
+
+![notes](https://user-images.githubusercontent.com/98099163/209835961-2888ebb6-1b6e-46f3-9e2c-aea94d7e5864.png)
+
+
 
 `write-your-code-here`
 
