@@ -1,49 +1,61 @@
 # Brasil Export Mobile
-> O aplicativo `brasil_export_app` facilita a gestão de atividades e a comunicação entre conselheiros, patrocinadores, autoridades e o público em geral interessado no universo da logística e da infraestrutura portuária.
+> O projeto Brasil Export mobile, é dividido em dois aplicativos. `Brasil Export` e `BE News`.
 
-## Table of Contents
-* [General Info](#general-information)
-* [Technologies Used](#technologies-used)
-* [Features](#features)
-* [Screenshots](#screenshots)
-* [Setup](#setup)
-* [Usage](#usage)
-* [Project Status](#project-status)
-* [Room for Improvement](#room-for-improvement)
-* [Acknowledgements](#acknowledgements)
-* [Contact](#contact)
-<!-- * [License](#license) -->
+## Sobre o Brasil Export
+O aplicativo `brasil_export_app` facilita a gestão de atividades e a comunicação entre conselheiros, patrocinadores, autoridades e o público em geral interessado no universo da logística e da infraestrutura portuária.
 
+## Versões
+- Flutter 2.10.5
+> Após fazer o clone do projeto, é recomendado executar os comandos `flutter clean` e depois `flutter pub get`.
 
-## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+## Tecnologias usadas
+- Flutter
+- Dart
+- Firebase (messaging e database)
+- ValueNotifier (gerenciamento de estados)
 
 
-## Technologies Used
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
+## Funcionalidades
+- Autenticação e login de usuários.
+- Visualização de notícias(notas) sobre portos, logística e infraestruturas.
+- Calendário com eventos/palestras, que o usuário pode se inscrever de forma online ou presencial.
+- Chat One-One entre os usuários cadastrados no aplicativo.
+- Configurações do usuário (nome, cargo, empresa, etc).
+- Logout e encerramento de conta.
+
+## 
+![print](https://user-images.githubusercontent.com/98099163/209825464-e7c70fe9-0f4a-42b0-84e3-fc2f27a9d8fd.png)
+
+## Estrutura do projeto
+O Brasil Export é separado em duas pastas (Core e Modules).
+> Core
+
+Responsável pela lógica do aplicativo, ela traz todos os widgets, que serão usadas mais de uma vez. Além de armazenar rotas de api's, 
+cores, textos e estilos do app. Ela também possui as configurações do firebase, validações e algumas regras de negócio.
+
+> Modules
+
+Os módulos é onde fica toda a parte visual do aplicativo, juntamente com as models e controllers. Todas as telas/funcionalidades são encontradas 
+no module.
+
+![brasil-export](https://user-images.githubusercontent.com/98099163/209827691-00e36b20-4842-4f50-b390-ca8a52bc59be.png)
+
+> O projeto usa na sua estrutura o Flutter Modular, responsável por ter uma estrutura de micro frontends (microapps) onde conseguimos separar nosso aplicativo em módulos. Ele também é usado nas rotas do app, no qual trabalhamos com a injecção de dependências.
+
+## Usando o aplicativo
+
+## Intro
+Quando o usuário baixa o aplicativo, ele tem como primeiro contato a tela de `Intro`, separado em três telas(beaches), que são 
+telas de apresentações, mostrando o que é o Brasil Export e o Portal Be News.
+A pasta de `intro` é composta por uma pasta `presenter`, contento uma pasta `controller` e uma de apresentação (`pages`) que possui uma de `widgets`.
+
+![intro](https://user-images.githubusercontent.com/98099163/209830388-1023ee67-71b6-47f9-b8f7-dce3df07db60.png)
 
 
-## Features
-List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
+## Dashboard
+O aplicativo é dividido em quatro telas principais, sendo notas, calendário, chat e configurações.
 
-
-## Screenshots
-
-
-
-## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
-
-Proceed to describe how to install / setup one's local environment / get started with the project.
+![dashboard](https://user-images.githubusercontent.com/98099163/209826475-dac86982-0e16-4b07-af8a-1a9c8eb990f5.png)
 
 
 ## Usage
